@@ -39,9 +39,11 @@ export default function Footer() {
                     {/* Brand - takes more space */}
                     <div className="lg:col-span-4">
                         <a href="#" onClick={scrollToTop} className="flex items-center gap-2 mb-6 group">
-                            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] flex items-center justify-center text-white transition-transform group-hover:scale-110">
-                                <Monitor className="w-5 h-5" />
-                            </div>
+                            <img
+                                src="/logo.png"
+                                alt="Mon Coach Informaclique"
+                                className="w-11 h-11 transition-transform group-hover:scale-110"
+                            />
                             <div>
                                 <span className="text-lg font-bold block leading-tight">Mon Coach</span>
                                 <span className="text-[var(--color-primary)] font-bold text-sm">Informaclique</span>

@@ -8,10 +8,12 @@ import Abonnement from '@/components/sections/Abonnement'
 import Testimonials from '@/components/sections/Testimonials'
 import About from '@/components/sections/About'
 import Contact from '@/components/sections/Contact'
+import CustomCursor from '@/components/ui/CustomCursor'
 
 function App() {
   return (
     <div className="min-h-screen">
+      <CustomCursor />
       <Header />
       <main>
         <Hero />
