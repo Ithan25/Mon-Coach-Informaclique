@@ -72,16 +72,16 @@ export default function PackVitrine() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-3xl mx-auto mb-16"
+                    className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 px-2"
                 >
                     <Badge className="mb-4 bg-white/20 text-white border-0">
                         <Sparkles className="w-4 h-4 mr-2" />
                         Offre spéciale commerces
                     </Badge>
-                    <h2 className="text-white mb-6">
+                    <h2 className="text-white mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl">
                         Le Pack "Vitrine Nantaise"
                     </h2>
-                    <p className="text-xl text-white/80">
+                    <p className="text-base sm:text-xl text-white/80">
                         Vos clients sont sur leur téléphone. Ne laissez pas vos concurrents prendre votre place sur Google !
                     </p>
                 </motion.div>
@@ -95,16 +95,16 @@ export default function PackVitrine() {
                         transition={{ duration: 0.6 }}
                     >
                         {/* Price Card */}
-                        <div className="bg-white rounded-3xl p-8 mb-8 shadow-2xl">
-                            <div className="flex items-center justify-between mb-6">
+                        <div className="bg-white rounded-3xl p-5 sm:p-8 mb-8 shadow-2xl">
+                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
                                 <div>
                                     <span className="text-[var(--color-gray)] text-sm uppercase tracking-wide">Tarif unique</span>
                                     <div className="flex items-end gap-2">
-                                        <span className="text-5xl font-bold text-[var(--color-dark)]">500€</span>
+                                        <span className="text-4xl sm:text-5xl font-bold text-[var(--color-dark)]">500€</span>
                                         <span className="text-[var(--color-gray)] pb-2">TTC</span>
                                     </div>
                                 </div>
-                                <div className="text-right">
+                                <div>
                                     <Badge variant="accent" className="text-sm">
                                         Tout compris
                                     </Badge>
@@ -150,7 +150,8 @@ export default function PackVitrine() {
                                 className="w-full mt-8 gap-2"
                                 onClick={scrollToContact}
                             >
-                                Demander ma démo gratuite
+                                <span className="hidden sm:inline">Demander ma démo gratuite</span>
+                                <span className="sm:hidden">Ma démo gratuite</span>
                                 <ArrowRight className="w-5 h-5" />
                             </Button>
                         </div>
@@ -163,7 +164,7 @@ export default function PackVitrine() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <h3 className="text-2xl font-bold text-white mb-8">
+                        <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">
                             Comment on travaille ensemble ?
                         </h3>
 
@@ -178,20 +179,20 @@ export default function PackVitrine() {
                                     className="flex gap-4"
                                 >
                                     <div className="shrink-0">
-                                        <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-xl">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-lg sm:text-xl">
                                             {step.number}
                                         </div>
                                     </div>
-                                    <div className="flex-1 pt-1">
-                                        <div className="flex items-center gap-2 mb-1">
-                                            <h4 className="font-bold text-lg">{step.title}</h4>
+                                    <div className="flex-1 pt-0 sm:pt-1 min-w-0">
+                                        <div className="flex flex-wrap items-center gap-2 mb-1">
+                                            <h4 className="font-bold text-base sm:text-lg">{step.title}</h4>
                                             {step.highlight && (
                                                 <Badge className="bg-[var(--color-accent)] text-[var(--color-dark)] text-xs">
                                                     {step.highlight}
                                                 </Badge>
                                             )}
                                         </div>
-                                        <p className="text-white/70 text-sm leading-relaxed">
+                                        <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
                                             {step.description}
                                         </p>
                                     </div>

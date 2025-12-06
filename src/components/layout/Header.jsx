@@ -52,11 +52,11 @@ export default function Header() {
                             window.scrollTo({ top: 0, behavior: 'smooth' })
                         }}
                     >
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] flex items-center justify-center text-white group-hover:scale-110 transition-transform">
-                            <Monitor className="w-5 h-5" />
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <Monitor className="w-4 h-4 sm:w-5 sm:h-5" />
                         </div>
-                        <span className="text-lg font-bold text-[var(--color-dark)]">
-                            Mon Coach <span className="text-[var(--color-primary)]">Informaclique</span>
+                        <span className="text-base sm:text-lg font-bold text-[var(--color-dark)]">
+                            <span className="hidden xs:inline">Mon Coach </span><span className="text-[var(--color-primary)]">Informaclique</span>
                         </span>
                     </a>
 

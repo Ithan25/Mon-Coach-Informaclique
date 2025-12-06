@@ -50,8 +50,8 @@ export default function Hero() {
                 </div>
             </motion.div>
 
-            <div className="container-custom relative z-10 pt-24 pb-16">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="container-custom relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Text Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -59,58 +59,59 @@ export default function Hero() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-center lg:text-left"
                     >
-                        <Badge variant="accent" className="mb-6 text-sm gap-2">
-                            <Sparkles className="w-4 h-4" />
+                        <Badge variant="accent" className="mb-4 sm:mb-6 text-xs sm:text-sm gap-2">
+                            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
                             Votre partenaire numérique
                         </Badge>
 
-                        <h1 className="mb-6">
+                        <h1 className="mb-4 sm:mb-6">
                             <span className="text-[var(--color-dark)]">Votre </span>
                             <span className="text-gradient">Coach Informatique</span>
                             <span className="text-[var(--color-dark)]"> à Nantes</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-[var(--color-gray)] mb-8 max-w-xl mx-auto lg:mx-0">
+                        <p className="text-base sm:text-lg md:text-xl text-[var(--color-gray)] mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
                             Dépannage, formation, accompagnement numérique et création de sites web vitrines.
                             Je simplifie votre vie digitale avec patience et pédagogie.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-10">
                             <Button
                                 size="lg"
                                 onClick={(e) => scrollToSection(e, '#contact')}
-                                className="shadow-xl shadow-[var(--color-primary)]/30 gap-2"
+                                className="shadow-xl shadow-[var(--color-primary)]/30 gap-2 text-sm sm:text-base"
                             >
                                 Me contacter
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                             </Button>
                             <Button
                                 size="lg"
                                 variant="outline"
                                 onClick={(e) => scrollToSection(e, '#services')}
+                                className="text-sm sm:text-base"
                             >
                                 Découvrir mes services
                             </Button>
                         </div>
 
                         {/* Real profile badges */}
-                        <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                            <div className="flex items-center gap-3 px-4 py-3 bg-white rounded-2xl shadow-sm">
-                                <div className="w-10 h-10 rounded-full bg-[var(--color-blue)]/10 flex items-center justify-center">
-                                    <GraduationCap className="w-5 h-5 text-[var(--color-blue)]" />
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-4">
+                            <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-xl sm:rounded-2xl shadow-sm">
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--color-blue)]/10 flex items-center justify-center">
+                                    <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-blue)]" />
                                 </div>
                                 <div className="text-left">
-                                    <span className="block text-sm font-bold text-[var(--color-dark)]">BTS SIO</span>
-                                    <span className="text-xs text-[var(--color-gray)]">Services Informatiques</span>
+                                    <span className="block text-xs sm:text-sm font-bold text-[var(--color-dark)]">BTS SIO</span>
+                                    <span className="text-[10px] sm:text-xs text-[var(--color-gray)]">Services Informatiques</span>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-3 px-4 py-3 bg-white rounded-2xl shadow-sm">
-                                <div className="w-10 h-10 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                                    <Code className="w-5 h-5 text-[var(--color-primary)]" />
+                            <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 bg-white rounded-xl sm:rounded-2xl shadow-sm">
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
+                                    <Code className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-primary)]" />
                                 </div>
                                 <div className="text-left">
-                                    <span className="block text-sm font-bold text-[var(--color-dark)]">Bachelor</span>
-                                    <span className="text-xs text-[var(--color-gray)]">Développeur Web</span>
+                                    <span className="block text-xs sm:text-sm font-bold text-[var(--color-dark)]">Bachelor</span>
+                                    <span className="text-[10px] sm:text-xs text-[var(--color-gray)]">Développeur Web</span>
                                 </div>
                             </div>
                         </div>

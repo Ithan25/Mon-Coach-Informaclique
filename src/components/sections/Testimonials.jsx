@@ -93,7 +93,8 @@ export default function Testimonials() {
                         </div>
 
                         <Button size="lg" onClick={scrollToContact} className="gap-2">
-                            Devenir mon premier client
+                            <span className="hidden sm:inline">Devenir mon premier client</span>
+                            <span className="sm:hidden">Premier client</span>
                             <ArrowRight className="w-5 h-5" />
                         </Button>
 

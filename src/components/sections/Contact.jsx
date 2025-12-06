@@ -546,7 +546,7 @@ export default function Contact() {
                                             </>
                                         ) : (
                                             <>
-                                                <Send className="w-5 h-5" />
+                                                <Send className="w-5 h-5 hidden sm:block" />
                                                 Envoyer le message
                                             </>
                                         )}

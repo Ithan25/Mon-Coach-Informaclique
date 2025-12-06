@@ -58,10 +58,10 @@ export default function Abonnement() {
                             <Clock className="w-4 h-4" />
                             Maintenance
                         </Badge>
-                        <h2 className="mb-6">
+                        <h2 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl">
                             L'Abonnement <span className="text-gradient">Sérénité</span>
                         </h2>
-                        <p className="text-lg text-[var(--color-gray)] mb-8">
+                        <p className="text-base sm:text-lg text-[var(--color-gray)] mb-6 sm:mb-8">
                             Votre site web a besoin d'être entretenu pour rester performant et sécurisé.
                             Avec l'abonnement Sérénité, vous n'avez plus à vous en soucier !
                         </p>
@@ -76,12 +76,12 @@ export default function Abonnement() {
                                     transition={{ duration: 0.4, delay: index * 0.1 }}
                                     className="flex gap-4"
                                 >
-                                    <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                                        <feature.icon className="w-6 h-6 text-[var(--color-secondary)]" />
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white shadow-sm flex items-center justify-center shrink-0">
+                                        <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-secondary)]" />
                                     </div>
-                                    <div>
-                                        <h4 className="font-bold text-[var(--color-dark)] mb-1">{feature.title}</h4>
-                                        <p className="text-[var(--color-gray)] text-sm">{feature.description}</p>
+                                    <div className="min-w-0">
+                                        <h4 className="font-bold text-[var(--color-dark)] mb-1 text-sm sm:text-base">{feature.title}</h4>
+                                        <p className="text-[var(--color-gray)] text-xs sm:text-sm">{feature.description}</p>
                                     </div>
                                 </motion.div>
                             ))}
@@ -95,19 +95,19 @@ export default function Abonnement() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <Card className="relative overflow-hidden p-8 shadow-xl">
+                        <Card className="relative overflow-hidden p-5 sm:p-8 shadow-xl">
                             {/* Offer badge */}
                             <div className="absolute top-0 right-0">
-                                <div className="bg-[var(--color-accent)] text-[var(--color-dark)] px-6 py-2 text-sm font-bold transform rotate-0 origin-top-right flex items-center gap-2 rounded-bl-2xl">
+                                <div className="bg-[var(--color-accent)] text-[var(--color-dark)] px-4 sm:px-6 py-2 text-xs sm:text-sm font-bold transform rotate-0 origin-top-right flex items-center gap-2 rounded-bl-2xl">
                                     <Gift className="w-4 h-4" />
                                     3 mois offerts
                                 </div>
                             </div>
 
-                            <div className="mb-8 pt-4">
+                            <div className="mb-6 sm:mb-8 pt-4">
                                 <span className="text-[var(--color-gray)] text-sm uppercase tracking-wide">Tarif mensuel</span>
                                 <div className="flex items-end gap-2 mt-2">
-                                    <span className="text-6xl font-bold text-[var(--color-dark)]">15€</span>
+                                    <span className="text-5xl sm:text-6xl font-bold text-[var(--color-dark)]">15€</span>
                                     <span className="text-[var(--color-gray)] pb-3">/ mois</span>
                                 </div>
                                 <p className="text-sm text-[var(--color-gray)] mt-2">
